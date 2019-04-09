@@ -52,7 +52,7 @@ namespace WebApplication11.Controllers
 
                     myclient.Send(new MailMessage
                     {
-                        From = new MailAddress("i.yurkevich.vironit@vironit.ru", "25032019yig"),
+                        From = new MailAddress("i.yurkevich.vironit@vironi.ru", "asasa"),// asasa is password change it
                         To = { "test.vironit@yandex.by" },
                         Subject = "TestErr",
                         Body = string.Format("Для завершения регистрации перейдите по ссылке:" +
