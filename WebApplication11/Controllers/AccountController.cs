@@ -47,7 +47,7 @@ namespace WebApplication11.Controllers
                     myclient.Timeout = 1000;
                     myclient.DeliveryMethod = SmtpDeliveryMethod.Network;
                     myclient.UseDefaultCredentials = false;
-                    myclient.Credentials = new NetworkCredential("i.yurkevich.vironit@vironit.ru", "25032019yig");
+                    myclient.Credentials = new NetworkCredential("i.yurkevich.vironit@vironit.ru", "asasa");// asasa is password change it
 
 
                     myclient.Send(new MailMessage
