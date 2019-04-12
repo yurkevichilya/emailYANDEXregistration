@@ -15,5 +15,8 @@ namespace WebApplication11.Models
         {
             return new ApplicationContext();
         }
+        public DbSet<Product> Products { get; set; }
+
+
     }
 }

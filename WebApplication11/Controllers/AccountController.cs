@@ -160,8 +160,24 @@ namespace WebApplication11.Controllers
         [HttpGet]
         public ActionResult LogOff()
         {
+            using (ApplicationContext db = new ApplicationContext())
+            {
+                //db.Users
+            }
             AuthenticationManager.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
             return RedirectToAction("Index", "Home");
+        }
+        public ActionResult Products()
+        {
+           ////IEnumerable<Product> products = DBOrders.Products;
+           ////ViewBag.Products = products;
+           //List<Product> products = new List<Product>();
+           //using (ApplicationContext db = new ApplicationContext())
+           //{
+           //    products = db.Products.ToList<Product>();
+           //}
+           //ViewBag.Products = products;
+           return View();
         }
     }
 }

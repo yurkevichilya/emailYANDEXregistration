@@ -23,9 +23,10 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     @if (!(User.Identity.GetUserName() == null))
-                    {<li>
-                         @Html.ActionLink("Здравствуйте, " + User.Identity.GetUserName() + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
-                    </li>
+                    {
+                        <li>
+                            @Html.ActionLink("Здравствуйте, " + User.Identity.GetUserName() + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
+                        </li>
                     }
                     <li>@Html.ActionLink("Домашняя страница", "Index", "Home")</li>
                     <li>@Html.ActionLink("О программе", "About", "Home")</li>
@@ -33,6 +34,7 @@
                     <li>@Html.ActionLink("Регистрация", "Register", "Account")</li>
                     <li>@Html.ActionLink("Логин", "Login", "Account")</li>
                     <li>@Html.ActionLink("Выход", "LogOff", "Account")</li>
+                    <li>@Html.ActionLink("Продукты", "Products", "Account")</li>
                 </ul>
             </div>
         </div>

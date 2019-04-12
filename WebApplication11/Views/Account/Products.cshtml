@@ -1,0 +1,43 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>List</title>
+    <link rel="stylesheet" href="~/Content/Site.css">
+</head>
+<body>
+    <div>
+        <div class="container">
+            <div class="table">
+                <div class="table-header">
+                    <div class="header__item">
+                        <p><a class="filter__link__white" href="/Home/AddProduct">Add</a></p>
+                        <p><a class="filter__link__white" href="/Home/Index">Home</a></p>
+                    </div>
+                </div>
+                <div class="table-content">
+                    @foreach (var b in ViewBag.Products)
+                    {
+                        <div class="table-row">
+                            <div class="table-data">
+                                <p>@b.Id</p>
+                            </div>
+                            <div class="table-data">
+                                <p>@b.Name</p>
+                            </div>
+                            <div class="table-data">
+                                <p>@b.Price</p>
+                            </div>
+
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
